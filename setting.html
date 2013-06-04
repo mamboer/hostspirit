@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>HostSpirit - Settings</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="HostSpirit - A simple host editor"/>
+		<meta name="author" content="levinhuang"/>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet"/>
+		<link href="css/style.css" rel="stylesheet"/>
+	</head>
+
+	<body>
+		<div class="site_bg"></div>
+		<div class="navbar navbar-inverse navbar-indiebg navbar-abs-top">
+			<div class="navbar-inner">
+				<div class="navbar-innerbg"></div>
+				<div class="container-fluid">
+					<a id="btnNavbar" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="about.html">
+						<div class="mod_circle circle_box1">
+							<div class="mod_circlebg"></div>
+							<div class="mod_circlebd">
+								HS
+							</div>
+						</div>
+					</a>
+					<div id="navCollapse" class="nav-collapse">
+						<div class="pull-right win_acts">
+							<a id="btnMinSize" href="#" class="mod_btnapp mod_btnappmin" title="close"><i class="icon-resize-small icon-white"></i></a>
+							<a id="btnFullscreen" href="#" class="mod_btnapp mod_btnappfull" title="close"><i class="icon-fullscreen icon-white"></i></a>
+							<a id="btnClose" href="#" class="mod_btnapp mod_btnappclose" title="close"><i class="icon-off icon-white"></i></a>
+						</div>
+						<ul id="J_topnav" class="nav">
+							<li class="active"><a id="hero_unit_home_lnk" href="setting.html">Settings</a></li>
+							<li><a href="detail.html">Hosts</a></li>
+							<li><a href="about.html">About</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+
+		<div id="secA" class="container-fluid sec_A">
+			<div class="row-fluid row_A">
+				<div class="mod_panel">
+					<div class="panel_hd">
+						<div class="panel_hdin">
+							<div class="pull-right cfg_acts">
+								<button id="btnNew" class="btn btn_new" title="New">New</button>
+								<button id="btnSave" class="btn btn-primary btn_save hide" title="Save">Save</button>
+							</div>
+							<h1>Host Settings</h1>
+						</div>
+						<div class="panel_bg2"></div>
+					</div>
+					<div class="panel_bd">
+						<ul id="cfgList" class="mod_hlist cfg_list"></ul>
+					</div>
+				</div>
+			</div><!--/row-->
+
+		</div><!--/.fluid-container-->
+
+		<div class="mod_status">
+			<div id="appStatus" class="alert"></div>
+			<div id="appTip" class="alert alert-tip" style="display:none;"></div>
+		</div>
+
+		<footer>
+			<p>&copy; badstyle 2012~<script type="text/javascript">document.write((new Date()).getFullYear());</script></p>
+		</footer>
+
+		<!--Alert-->
+		<div id="appAlert" class="modal hide fade mod_alert" tabindex="-1" role="dialog" aria-labelledby="alertTitle" aria-hidden="true">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+				<h3 id="alertTitle">Notice</h3>
+			</div>
+			<div class="modal-body" id="appAlertBody">
+			</div>
+		</div>
+		<!--/Alert-->
+
+		<!--hostEditor-->
+		<div id="hostEditor" class="modal modal-fixed fade mod_editor hide" tabindex="-1" role="dialog" aria-labelledby="editorTitle" aria-hidden="true">
+			<div class="modal-header">
+				<div class="modal-headerin">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+					<h3 id="editorTitle">Add Host Settings</h3>
+				</div>
+			</div>
+			<div class="modal-body">
+				<div id="editorBody" class="modal-bodyin">
+					<div class="form-horizontal form_host">
+						<div id="cgName" class="control-group">
+							<label class="control-label" for="iptName">Name</label>
+							<div class="controls">
+								<input type="text" id="iptName" class="input-block-level" name="name" placeholder="Alpha,number,underline,or dashline"/>
+							</div>
+						</div>
+						<div id="cgBody" class="control-group cg_body">
+							<label class="control-label" for="iptBody">Content</label>
+							<div class="controls">
+								<textarea name="body" class="input-block-level" id="iptBody" rows="10"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="modal-footerin">
+					<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+					<button id="btnSaveHost" class="btn btn-primary">Save</button>
+				</div>
+			</div>
+		</div>
+		<!--/hostEditor-->
+
+		<!-- Le javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/lib/bootstrap.min.js"></script>
+		<script src="js/lib/date.js"></script>
+		<script src="js/lib/jf.core.js"></script>
+		<script src="js/base.js"></script>
+		<script src="js/alert.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/setting.js"></script>
+		<script src="js/editor.js"></script>
+		<script type="text/javascript">
+			JF.Init({});
+		</script>
+
+	</body>
+</html>

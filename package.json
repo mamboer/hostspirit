@@ -1,0 +1,16 @@
+{
+	"name": "hostspirit",
+	"main": "setting.html",
+	"version":"1.0.2",
+	"description": "A host editor app of node-webkit",
+	"window": {
+		"toolbar": false,
+		"frame":false,
+		"position": "center",
+		"width": 980,
+		"height": 600,
+		"min_width": 515,
+		"min_height": 300,
+		"icon":"icon.png"
+	}
+}

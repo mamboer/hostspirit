@@ -1,0 +1,65 @@
+//Variables
+//----------------------------------------
+@panelBGColor:                 #666666;
+@textEMColor:                  #02c4fb;
+@gridHoverBGColor:             #CCCCCC;
+
+
+
+
+//Mixins
+//----------------------------------------
+.transition(@trans:all .4s linear){
+	transition:@trans;
+	-webkit-transition:@trans;
+	-moz-transition:@trans;
+	-ms-transition:@trans;
+	-o-transition:@trans;
+}
+.gridBG(@baseColor:#ffffff,@lineColor:#cccccc){
+
+	background-color: @baseColor;
+	background-image: 
+		-moz-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor), 
+		-moz-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-moz-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-moz-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-moz-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-moz-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-moz-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-moz-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor);
+
+	background-image: 
+		-o-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor), 
+		-o-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-o-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-o-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-o-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-o-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-o-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-o-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor);
+
+	background-image: 
+		-webkit-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor), 
+		-webkit-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-webkit-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-webkit-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-webkit-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-webkit-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-webkit-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		-webkit-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor);
+
+	background-image: 
+		linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5, @lineColor 87.5, @lineColor), 
+		linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor),
+		linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, @lineColor 87.5%, @lineColor);
+
+	background-size:4px 4px;
+	background-position: 1px 0,0 -3px,4px 1px,-1px -2px,3px 2px,2px -1px,2px 3px,1px 4px;
+
+}

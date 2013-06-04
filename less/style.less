@@ -1,0 +1,77 @@
+@import "_vars.less";
+@import "_global.less";
+
+.host_list{
+	padding-bottom:25px;
+	-webkit-user-select: auto;
+	.transition();
+	&:hover{
+		.gridBG();
+	}
+}
+.cfg_list{
+	margin-top:10px;
+	margin-left:0;
+	.f_acts{
+		position:absolute;
+		top:0;
+		right:0;
+		display:none;
+		a{
+			margin-left:5px;
+		}
+	}
+	li{
+		position: relative;
+		cursor:pointer;
+		padding:5px 10px;
+		margin:0 10px 10px 0;
+		border:1px solid #fff;
+		.transition();
+		&.active{
+			h3{
+				color:@textEMColor;
+			}
+			border-bottom-color: @textEMColor;
+		}
+		&:hover{
+			.f_acts{
+				display:block;
+			}
+			color:#333;
+			.gridBG();
+		}
+	}
+	h3{
+		margin:0;
+	}
+}
+
+.mod_editor{
+	.modal-bodyin{
+		position: relative;
+		padding-top:0;
+		padding-bottom:0;
+		height:100%;
+	}
+}
+.form_host{
+	position:absolute;
+	top:15px;
+	bottom:15px;
+	left:15px;
+	right:15px;
+}
+.cg_body{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	top:50px;
+	.controls{
+		height:100%;
+	}
+	textarea{
+		height:100%;
+	}
+}

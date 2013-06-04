@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>HostSpirit - About</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="HostSpirit - A simple host editor"/>
+		<meta name="author" content="levinhuang"/>
+
+		<link href="css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="css/bootstrap-responsive.min.css" rel="stylesheet"/>
+		<link href="css/style.css" rel="stylesheet"/>
+	</head>
+
+	<body>
+		<div class="site_bg"></div>
+		<div class="navbar navbar-inverse navbar-indiebg navbar-abs-top">
+			<div class="navbar-inner">
+				<div class="navbar-innerbg"></div>
+				<div class="container-fluid">
+					<a id="btnNavbar" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="about.html">
+						<div class="mod_circle circle_box1">
+							<div class="mod_circlebg"></div>
+							<div class="mod_circlebd">
+								HS
+							</div>
+						</div>
+					</a>
+					<div id="navCollapse" class="nav-collapse">
+						<div class="pull-right win_acts">
+							<a id="btnMinSize" href="#" class="mod_btnapp mod_btnappmin" title="close"><i class="icon-resize-small icon-white"></i></a>
+							<a id="btnFullscreen" href="#" class="mod_btnapp mod_btnappfull" title="close"><i class="icon-fullscreen icon-white"></i></a>
+							<a id="btnClose" href="#" class="mod_btnapp mod_btnappclose" title="close"><i class="icon-off icon-white"></i></a>
+						</div>
+						<ul id="J_topnav" class="nav">
+							<li><a id="hero_unit_home_lnk" href="setting.html">Settings</a></li>
+							<li><a href="detail.html">Hosts</a></li>
+							<li class="active"><a href="about.html">About</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+
+		<div id="secA" class="container-fluid sec_A">
+			<div class="row-fluid row_A">
+				<div class="mod_panel">
+					<div class="panel_hd">
+						<div class="panel_hdin">
+							<h1>About HostSpirit</h1>
+						</div>
+						<div class="panel_bg2"></div>
+						
+					</div>
+					<div class="panel_bd" id="aboutBody">
+						<h3>
+							Version <span id="txtVersion"></span>
+						</h3>
+						<h4>Author</h4>
+						<p>
+							<a href="http://t.qq.com/badstyle">t.qq.com/badstyle</a>
+						</p>
+						<h4>Techniques</h4>
+						<ul>
+							<li><a href="https://github.com/rogerwang/node-webkit/">node-webkit</a></li>
+							<li><a href="http://nodejs.org/">nodejs</a></li>
+							<li><a href="http://twitter.github.com/bootstrap/">bootstrap</a></li>
+							<li><a href="http://mamboer.github.com/jqfocus/index.html">JF.Core.js</a></li>
+						</ul>
+						<h4>SourceCode:</h4>
+						<p><a href="https://github.com/mamboer/nwapp/tree/master/hostspirit">HostSpirit in github</a></p>
+						<h4>Download:</h4>
+						<p><a href="http://mamboer.github.com/nwapp/hostspirit/release.zip">Release.zip</a></p>
+					</div>
+				</div>
+			</div><!--/row-->
+
+		</div><!--/.fluid-container-->
+
+		<div class="mod_status">
+			<div id="appStatus" class="alert" style="display:none;"></div>
+			<div id="appTip" class="alert alert-tip">HostSpirit V1.0.2</div>
+		</div>
+
+		<footer>
+			<p>&copy; badstyle 2012~<script type="text/javascript">document.write((new Date()).getFullYear());</script></p>
+		</footer>
+
+		<!--Alert-->
+		<div id="appAlert" class="modal hide fade mod_alert" tabindex="-1" role="dialog" aria-labelledby="alertTitle" aria-hidden="true">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+				<h3 id="alertTitle">Notice</h3>
+			</div>
+			<div class="modal-body" id="appAlertBody">
+			</div>
+		</div>
+		<!--/Alert-->
+
+		<!-- Le javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/lib/bootstrap.min.js"></script>
+		<script src="js/lib/jf.core.js"></script>
+		<script src="js/base.js"></script>
+		<script src="js/alert.js"></script>
+		<script src="js/data.js"></script>
+		<script src="js/about.js"></script>
+		<script type="text/javascript">
+			JF.Init({});
+		</script>
+
+	</body>
+</html>

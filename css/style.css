@@ -1,0 +1,322 @@
+@font-face {
+  font-family: Iceland;
+  src: url(../fonts/Iceland/Iceland-Regular.ttf);
+}
+* {
+  font-family: 'Iceland', 'sans-serif', '\5FAE\8F6F\96C5\9ED1';
+}
+body {
+  position: relative;
+  font-size: 1.1em;
+  overflow: hidden;
+  -webkit-user-select: none;
+}
+a {
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+.navbar {
+  -webkit-app-region: drag;
+}
+button,
+.mod_nodrag,
+.navbar a {
+  -webkit-app-region: no-drag;
+}
+.container,
+.container-fluid {
+  position: relative;
+}
+.navbar .brand {
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+.row-fluid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal {
+  color: #333;
+}
+.modal.fade.in {
+  top: 20%;
+}
+.navbar-innerbd {
+  position: relative;
+}
+.page_main {
+  padding-top: 65px;
+}
+.mod_alert {
+  z-index: 1060;
+}
+.mod_btnapp {
+  margin-left: 8px;
+}
+.mod_circle {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+.mod_circlebg {
+  border: 2px solid #ffffff;
+  border-image: initial;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.mod_circlebd {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: 50%;
+}
+.mod_panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.mod_panel h1 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.2em;
+}
+.mod_panel .panel_hd {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 55px;
+}
+.mod_panel .panel_bd {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55px;
+  bottom: 0;
+  overflow: auto;
+}
+.mod_panel .panel_bg1,
+.mod_panel .panel_bg2 {
+  opacity: 0.5;
+  padding: 5px 0 0 0;
+}
+.mod_panel .panel_bg1 {
+  border-top: 1px solid #666666;
+  border-bottom: 2px solid #666666;
+}
+.mod_panel .panel_bg2 {
+  margin-top: 5px;
+  border-top: 2px solid #666666;
+  border-bottom: 1px solid #666666;
+}
+/* 水平列表 */
+.mod_hlist,
+.mod_ptl {
+  zoom: 1;
+}
+.mod_hlist:after,
+.mod_ptl:after {
+  display: block;
+  content: '\0020';
+  clear: both;
+}
+.mod_hlist li,
+.mod_hlist .li {
+  float: left;
+  display: inline;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  color: #c09853;
+}
+.mod_status {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #fff;
+}
+.mod_status .alert {
+  position: relative;
+  background-color: #000;
+  border-color: #333;
+  margin-bottom: 0;
+}
+.mod_status .alert-tip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-indent: 20px;
+}
+.mod_editor {
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+.mod_editor.fade.in {
+  top: 60px;
+  left: 20px;
+  right: 20px;
+  bottom: 40px;
+}
+.sec_A {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  top: 65px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.site_bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  _position: absolute;
+  width: 100%;
+  height: 100%;
+  /*
+	background-color: #fff; 
+    background-image: -webkit-linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), -webkit-linear-gradient(#eee .1em, transparent .1em);
+	background-size: 100% 1.2em;
+	*/
+
+  /*
+	background: -webkit-radial-gradient(black 15%, transparent 16%) 0 0, -webkit-radial-gradient(black 15%, transparent 16%) 8px 8px, -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px, -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color: #282828;
+	background-size: 16px 16px;
+	*/
+
+}
+.win_acts {
+  margin-top: 15px;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .sec_collapsein {
+    top: 200px;
+  }
+  .row_A {
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .sec_collapsein {
+    top: 200px;
+  }
+  .row_A {
+    top: 0;
+  }
+}
+.host_list {
+  padding-bottom: 25px;
+  -webkit-user-select: auto;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+.host_list:hover {
+  background-color: #ffffff;
+  background-image: -moz-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -moz-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -moz-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -moz-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -moz-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -moz-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -moz-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -moz-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc);
+  background-image: -o-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -o-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -o-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -o-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -o-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -o-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -o-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -o-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc);
+  background-image: -webkit-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -webkit-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -webkit-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -webkit-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -webkit-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -webkit-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -webkit-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -webkit-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc);
+  background-image: linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5, #cccccc 87.5, #cccccc), linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc);
+  background-size: 4px 4px;
+  background-position: 1px 0, 0 -3px, 4px 1px, -1px -2px, 3px 2px, 2px -1px, 2px 3px, 1px 4px;
+}
+.cfg_list {
+  margin-top: 10px;
+  margin-left: 0;
+}
+.cfg_list .f_acts {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+.cfg_list .f_acts a {
+  margin-left: 5px;
+}
+.cfg_list li {
+  position: relative;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 10px 10px 0;
+  border: 1px solid #fff;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+.cfg_list li.active {
+  border-bottom-color: #02c4fb;
+}
+.cfg_list li.active h3 {
+  color: #02c4fb;
+}
+.cfg_list li:hover {
+  color: #333;
+  background-color: #ffffff;
+  background-image: -moz-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -moz-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -moz-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -moz-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -moz-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -moz-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -moz-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -moz-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc);
+  background-image: -o-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -o-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -o-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -o-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -o-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -o-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -o-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -o-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc);
+  background-image: -webkit-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -webkit-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -webkit-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -webkit-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -webkit-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -webkit-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -webkit-linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), -webkit-linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc);
+  background-image: linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5, #cccccc 87.5, #cccccc), linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), linear-gradient(45deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc), linear-gradient(-135deg, transparent 25%, transparent 25%, transparent 87.5%, #cccccc 87.5%, #cccccc);
+  background-size: 4px 4px;
+  background-position: 1px 0, 0 -3px, 4px 1px, -1px -2px, 3px 2px, 2px -1px, 2px 3px, 1px 4px;
+}
+.cfg_list li:hover .f_acts {
+  display: block;
+}
+.cfg_list h3 {
+  margin: 0;
+}
+.mod_editor .modal-bodyin {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+}
+.form_host {
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+}
+.cg_body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 50px;
+}
+.cg_body .controls {
+  height: 100%;
+}
+.cg_body textarea {
+  height: 100%;
+}
