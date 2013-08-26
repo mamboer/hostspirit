@@ -3,8 +3,7 @@
 ..\img
 ..\fonts
 ..\about.html
-..\index.html
-..\package.json
-..\setting.html
 ..\detail.html
 ..\icon.png
+..\package.json
+..\setting.html

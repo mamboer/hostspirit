@@ -1,0 +1,5 @@
+整合线上配置文件
+http://hosts.paipaioa.com/b2b2c.dev.htm
+http://hosts.paipaioa.com/b2b2c.beta.htm
+http://hosts.paipaioa.com/b2b2c.gamma.htm
+
